@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+
+  		"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+        
+
+    <validators>
+
+	<field name="firstname">
+
+	<field-validator type="requiredstring">
+	
+			<message>First name is required</message>
+			
+	</field-validator>
+	<field-validator type="regex">
+<param name="expression">^[a-zA-Z]{1,20}$</param>
+<message>firstname is invalid</message>
+</field-validator>
+	
+	</field>
+	
+  	<field name="lastname">
+  	
+	<field-validator type="requiredstring">
+	<message>Last name is required</message>
+
+		</field-validator>
+	
+	
+		
+	
+	
+	
+	<field-validator type="regex">
+<param name="expression">^[a-zA-Z]{1,20}$</param>
+<message>last name is invalid</message>
+</field-validator>
+	
+	 </field>
+	
+	
+	
+ 	
+ 	
+	<field name="address">
+	<field-validator type="requiredstring">
+			<message>Address is required</message>
+	</field-validator>
+	</field>
+
+	
+	
+	<field name="pincode">
+		<field-validator type="regex">
+			<param name="expression">[0-9]{6}</param>
+			<message>Enter a valid pincode</message>
+		</field-validator>
+	</field>
+	
+	
+	<field name="mobile">
+		<field-validator type="regex">
+			<param name="expression">[0-9]{10,11}</param>
+			<message>Enter a valid mobile</message>
+		</field-validator>
+	</field>
+	
+	 
+	
+	<field name="email">
+	<field-validator type="requiredstring">
+	<message>enter email id</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>Enter a valid email</message>
+		</field-validator>
+	</field>
+	
+
+	<field name="bankname">
+	<field-validator type="requiredstring">
+			<message>Bankname is required</message>
+	</field-validator>
+	<field-validator type="regex">
+	<param name="expression">[a-zA-Z]{1,50}</param>
+	<message>dont enter nos</message>
+	</field-validator>
+	</field>
+
+	
+	<field name="insuranceno">
+	<field-validator type="requiredstring">
+			<message>Insuranceno is required</message>
+	</field-validator>
+	<field-validator type="regex">
+			<param name="expression">[0-9]{10}</param>
+			<message>Enter a valid Insuranceno</message>
+		</field-validator>
+	</field>
+	
+	<field name="accountno">
+	<field-validator type="requiredstring">
+			<message>Accountno is required</message>
+	</field-validator>
+<field-validator type="regex">
+			<param name="expression">[0-9]{11}</param>
+			<message>Enter a valid Accountno</message>
+		</field-validator>
+	</field>
+
+
+	
+
+	<field name="engineno">
+	<field-validator type="requiredstring">
+				<message>engineno is required</message>
+	</field-validator>
+	
+	<field-validator type="regex">
+			<param name="expression">[0-9]{10}</param>
+			<message>Enter a valid Engineno</message>
+		</field-validator>
+	
+	
+	</field>
+	
+
+	<field name="chasisno">
+
+	<field-validator type="requiredstring">
+	
+			<message>chasisno is required</message>
+	</field-validator>
+	<field-validator type="regex">
+			<param name="expression">[0-9]{10}</param>
+			<message>Enter a valid Chasisno</message>
+		</field-validator>
+	</field>	
+	
+	
+	<field name="doa">
+
+	<field-validator type="requiredstring">
+	
+			<message>date of appoinment is required</message>
+	</field-validator>
+	</field>
+	
+	</validators>
+

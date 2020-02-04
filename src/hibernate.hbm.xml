@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="admintable" table="LOGS">
+<id name="username" type="string" column="USER_NAME"></id>
+<property name="password">
+<column name="PASSWORD"></column></property>
+<property name="admin">
+<column name="USER_TYPE"></column></property>
+</class>
+<class name="Newuserlogintable" table="PERSONAL_DETAILS">
+<id name="username" type="string" column="USER_NAME">
+</id>
+<property name="age">
+<column name="AGE" />
+</property>
+<property name="firstname">
+<column name="FIRST_NAME" />
+</property>
+	  
+	  
+<property name="lastname">
+<column name="LAST_NAME" />
+</property>
+	  
+	  
+<property name="gender">
+<column name="GENDER" />
+</property>
+	  
+<property name="address1">
+<column name="ADDRESS1" />
+</property> 
+	  
+	   
+<property name="address2">
+<column name="ADDRESS2" />
+</property>  
+	  
+	  
+<property name="city">
+<column name="CITY" />
+</property>  
+	  
+	  
+<property name="idmark">
+<column name="ID_MARK" />
+</property>  
+	  
+<property name="blood_group">
+<column name="BLOOD_GROUP" />
+</property>  
+	  
+	  
+<property name="occupation">
+<column name="OCCUPATION" />
+</property> 
+	  
+	   
+<property name="email">
+<column name="EMAIL" />
+</property>  
+	  
+	  
+<property name="pincode">
+<column name="PINCODE" />
+</property> 
+	  
+	  
+<property name="mobile">
+<column name="MOBILE" />
+</property>
+	  
+	  
+<property name="stdcode">
+<column name="STD_CODE" />
+</property>
+	  
+	  
+<property name="phonenumber">
+<column name="PHONE" />
+</property>
+	  
+<property name="accountno">
+<column name="BANK_ACCOUNT_NO" />
+</property>
+	  
+	  
+<property name="dateofbirth">
+<column name="DATE_OF_BIRTH" />
+</property>
+	  
+	  
+<property name="bankname">
+<column name="BANK_NAME" />
+</property>	  
+</class>
+
+<!-- g3 -->
+<class name="testpack.test_table" table="llr_online_test">
+	   <id name="questioncol_id" type="int" column="QUESTION_ID" >
+	   <generator class="assigned"/>
+	  </id>
+	  <property name="questioncol">
+		 <column name="QUESTION" />
+	  </property>
+	  
+	    <property name="answer_a">
+		 <column name="ANSWER_A" />
+	  </property>
+	  
+	      <property name="answer_b">
+		 <column name="ANSWER_B" />
+	  </property>
+	  
+	      <property name="user_answer">
+	      <column name="USER_ANSWER" />		
+		 
+	  </property>
+	  
+	    <property name="answercol_id">
+		  <column name="ANSWER_ID" />
+		 
+	  </property>
+   </class>
+   <!-- llrchen -->
+   <class name="com.rto.llr.LlrPojo" table="LICENSE_DETAILS">
+   
+   <id name = "llr_form_number" type="string" column="LLR_FORM_NUMBER"> 
+   <generator class="sequence"/>
+   </id>
+   
+   <property name="addressproofnumber">
+		<column name="ADDRESS_PROOF_NUMBER"/>
+   </property>
+   
+   <property name="ageproofnumber">
+		<column name="AGE_PROOF_NUMBER"/>
+   </property>
+   
+   <property name="vehicletype">
+		<column name="VEHICLE_TYPE"/>
+   </property>
+   
+<property name="addressprooftype">
+		<column name="ADDRESS_PROOF_TYPE"/>
+   </property>
+   
+   <property name="ageprooftype">
+		<column name="AGE_PROOF_TYPE "/>
+   </property>
+   
+<property name="DDnumber">
+		<column name="DD_NUMBER"/>
+   </property>
+   
+   <property name="Testdate">
+		<column name="PHYSICAL_TESTDATE"/>
+   </property>
+   
+   </class>
+   <!-- grievance -->
+   
+   <class name="pkg.grieve" table="GRIEVANCE">
+
+
+	<id name="user_name" type="string" column="USER_NAME" >
+		<generator class="assigned"></generator>	
+		</id>
+		
+		<property name="service_type">
+		<column name="SERVICE_TYPE" />
+		</property>
+		<property name="sub_service_type">
+			<column name="SUB_SERVICE_TYPE" />
+		</property>
+		
+		<property name="grievances">
+			<column name="GRIEVANCES" />
+		</property>
+		
+
+
+</class>
+
+
+<class name="Contact" table="CONTACT">
+
+  <id name="firstname" type="string" column="FIRSTNAME" >
+
+         <generator class="assigned"/>
+
+       </id>   
+
+         
+
+         <property name="lastname">
+
+            <column name="LASTNAME"/>
+
+            </property>
+
+            <property name="gender">
+
+             <column name="GENDER" />       
+
+        </property>
+
+			<property name="subtype">
+
+            <column name="SUBTYPE"/>
+
+            </property>
+           
+           
+            <property name="address">
+
+            <column name="ADDRESS"/>
+
+            </property>
+            
+
+			<property name="pincode">
+
+            <column name="PINCODE"/>
+
+            </property>
+            
+            <property name="mobile">
+
+            <column name="MOBILE"/>
+
+            </property>
+            
+            <property name="email">
+
+            <column name="EMAIL"/>
+
+        </property>
+            
+            <property name="bankname">
+
+            <column name="BANKNAME"/>
+
+            </property>
+            
+		<property name="insuranceno">
+
+            <column name="INSURANCENO"/>
+
+        </property>
+        
+        <property name="accountno">
+
+            <column name="ACCOUNTNO"/>
+
+        </property>
+        
+        <property name="engineno">
+
+            <column name="ENGINENO"/>
+
+        </property>
+        
+        <property name="chasisno">
+
+            <column name="CHASISNO"/>
+
+        </property>
+
+        <property name="doa">
+            <column name="DOA"/>
+        </property>
+   </class>
+   
+   
+   
+   
+</hibernate-mapping>
+
+
